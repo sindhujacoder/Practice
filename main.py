@@ -42,3 +42,15 @@ from check import smarter_reverse
 
 string = 'hdbgjelbeb'
 print(smarter_reverse(string))
+
+from mergeSortedArrays import mergeSortedArray
+
+arr1 = [1,3,5,7,9,11,13,15,17]
+arr2 = [2,4,6,8,10,12,14,16]
+
+print(mergeSortedArray(arr1, arr2))
+
+arr1 = [8, 9, 10]
+arr2 = [1]
+
+print(mergeSortedArray(arr1, arr2))
