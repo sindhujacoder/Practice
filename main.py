@@ -29,7 +29,7 @@
 #print(my_new_array.get(5))
 #print(my_new_array.delete(5))
 #print(my_new_array.data)
-
+'''
 from reverseString import reverseString_brute, reverseString_ideal
 
 string = 'hdbgjelbeb'
@@ -54,3 +54,27 @@ arr1 = [8, 9, 10]
 arr2 = [1]
 
 print(mergeSortedArray(arr1, arr2))
+'''
+from implement_hashTable import hashTable
+
+hash_obj = hashTable(10)
+hash_obj.set('one', 1)
+hash_obj.set('two', 2)
+hash_obj.set('three', 3)
+hash_obj.set('four', 4)
+hash_obj.set('five', 5)
+hash_obj.set('six', 6)
+
+print(hash_obj.get('five'))
+print(hash_obj.values())
+print(hash_obj.keys())
+
+from firstRecurringCharacterHash import get_first_recurring_char
+
+arr = [4,5,6,7,4,6,7]
+print(get_first_recurring_char(arr))
+
+from patternMatchingHash import get_pattern_indexes
+
+string1 = 'AABAACAADAABAABA'
+print(get_pattern_indexes(string1, 'AABA'))
